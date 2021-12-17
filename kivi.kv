@@ -1,0 +1,131 @@
+
+<Touch>:
+    canvas.before:
+        Rectangle:
+            id : reci
+            pos: self.pos
+            size: self.size
+    
+            source: self.image_source 
+         
+
+
+
+    StackLayout:
+
+     
+        Label:
+            id:points 
+            font_name:"Arial"
+            size_hint:0.475,0.11
+            pos_hint:{'top':0.4 , 'left':1}
+            color : [0,0,1,1]
+        Label :
+            id:spacy
+            font_name:"Arial"
+            size_hint:0.05,0.11
+            pos_hint:{'top':0.4 , 'center':1}
+            color : [0,0,0,1]
+            border: (2, 2, 2, 2)
+            cap : 'square' 
+            joint : 'bevel' 
+            close : False 
+        Label:
+            id:timer
+            text:"timer"
+            size_hint :0.475,0.11
+            pos_hint:{'top':0.4 , 'right':1}
+            color : [0,0,1,1]
+        Label:
+            id:spacy2 
+            size_hint :1,0.02
+            border: (2, 2, 2, 2)
+            
+        Label:
+            id:sen
+            text:"sentince"
+            font_name:"Arial"
+            size_hint:1.0,0.30
+            color:[0,0,0,0.80]
+            text_size: self.width, None
+            halign: 'center'
+            valign:'middle'
+            height: self.texture_size[1]
+   
+            
+        
+        
+
+            
+        Button:
+        
+            background_color:[0.8,0.4,0,0.52] 
+
+            border: (2, 2, 2, 2)
+            on_press:root.Solve(1)
+            id:slv1
+            pos_hint: {'top':0.4}
+            
+            font_name:"Arial"
+            size_hint:1,0.11
+            color:[0,0,0,0.80]
+            
+        Label:
+   
+            size_hint:1,0.04
+            
+            
+ 
+        Button:
+        
+            background_color:[0.8,0.4,0,0.52] 
+
+            border: (2, 2, 2, 2)
+            on_press:root.Solve(2)
+            id:slv2
+            pos_hint: {'top':0.4}
+            
+            font_name:"Arial"
+            size_hint:1,0.11
+            color:[0,0,0,0.80]
+            
+        Label:
+   
+            size_hint:1,0.04
+            
+            
+ 
+        Button:
+        
+            background_color:[0.8,0.4,0,0.52] 
+
+            border: (2, 2, 2, 2)
+            on_press:root.Solve(3)
+            id:slv3
+            pos_hint: {'top':0.4}
+            
+            font_name:"Arial"
+            size_hint:1,0.11
+            color:[0,0,0,0.80]
+            
+        Label:
+   
+            size_hint:1,0.04
+
+        
+        Button:
+        
+            background_color:[0.8,0.4,0,0.52] 
+
+            border: (2, 2, 2, 2)
+            on_press:root.Solve(4)
+            id:slv4
+            pos_hint: {'top':0.4}
+            
+            font_name:"Arial"
+            size_hint:1,0.11
+            color:[0,0,0,0.80]
+            
+            
+ 
+   
